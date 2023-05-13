@@ -34,7 +34,7 @@
 function resumeDownload(){
 
     window.open(
-        "https://drive.google.com/file/d/1i0290izjJ15Lj8PjawrOhBNCg4IkcGyz/view?usp=share_link"
+        "https://drive.google.com/file/d/1i0290izjJ15Lj8PjawrOhBNCg4IkcGyz/view"
       );
 }
 
