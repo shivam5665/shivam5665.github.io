@@ -24,10 +24,17 @@
 //     });
      
 // }
+
+// document.querySelector("#resume-link-1").addEventListener("click", ()=>{
+//     window.open(
+//       "https://drive.google.com/file/d/1rECL7KJFC1-2hGxOBOBvwORNaAp_T0aj/view?usp=sharing"
+//     );
+// })
+
 function resumeDownload(){
 
     window.open(
-        "https://drive.google.com/file/d/1rECL7KJFC1-2hGxOBOBvwORNaAp_T0aj/view?usp=sharing"
+        "https://drive.google.com/file/d/1i0290izjJ15Lj8PjawrOhBNCg4IkcGyz/view?usp=share_link"
       );
 }
 
@@ -39,19 +46,21 @@ function resumeDownload(){
 // })
 
 
+let githubBtn = document.querySelector("#contact-github");
 
-function githubBtn(){
+githubBtn.addEventListener('click',function(){
     
     window.location.href = 'https://github.com/shivam5665';
 
-}
+})
 
+let linkedinBtn = document.querySelector(".fa-linkedin");
 
-function linkedinBtn(){
+linkedinBtn.addEventListener('click',function(){
     
-    window.location.href = 'https://www.linkedin.com/in/shiva-saraswat-718048199/';
+    window.location.href = 'https://linkedin.com/in/shiva-saraswat-718048199/';
 
-}
+})
 
 let contactBtn = document.querySelector("#contact-btn");
 
