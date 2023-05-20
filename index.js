@@ -136,8 +136,18 @@ function lyncNetlify(){
     window.location.href = "https://lambent-narwhal-8bd70e.netlify.app/";
 
 }
-function geeksNetlifyNetlify(){
+function geeksNetlify(){
 
     window.location.href = "https://effulgent-syrniki-67b038.netlify.app/";
+
+}
+function beautyGithub(){
+
+    window.location.href = "https://github.com/shivam5665/vestal-laborer-3891";
+
+}
+function beautyNetlify(){
+
+    window.location.href = "https://beauty-heaven.onrender.com/";
 
 }
