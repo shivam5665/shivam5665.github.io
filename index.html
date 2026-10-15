@@ -1,461 +1,84 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="a saraswattylesheet" href="github.css">
-    <title>Shiva saraswat Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="Resources/Logo-removebg-preview.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap');
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Shiva Saraswat is a web developer moving from the MERN stack into Zoho One development, CRM customization, and business workflow automation.">
+  <title>Shiva Saraswat — Zoho & Web Developer</title>
+  <link rel="icon" type="image/jpeg" href="Resources/profile_photo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <div class="container">
-        <section id="nav-menu">
-            
-            <div id="nav-bar">
-                
-                <a href="#home" class="nav-link home">
-                    <i class="fa-solid fa-house icon"></i>
-                    <p class=" nav-name">HOME </p>
-                </a>
-                <a href="#about" class="nav-link about">
-                    <i class="fa-solid fa-circle-info icon"></i>
-                    <p class=" nav-name">ABOUT</p>
-                </a>
-                <a href="#skills" class="nav-link skills">
-                    <i class="fa-solid fa-diagram-project icon"></i>
-                    <p class=" nav-name">SKILLS</p>
-                </a>
-                <a href="#projects" class="nav-link projects">
-                    <i class="fa-solid fa-file icon"></i>
-                    <p class=" nav-name">PROJECTS</p>
-                </a>
-                <a href="#contact" class="nav-link contact">
-                    <i class="fa-solid fa-phone icon"></i>
-                    <p class=" nav-name">CONTACTS</p>
-                </a>
-                <a id="resume-button-1" target="_blank" class="nav-link resume" onclick="window.open(`https://drive.google.com/file/d/1i0290izjJ15Lj8PjawrOhBNCg4IkcGyz/view?usp=share_link`)"  href="Shiva_Saraswat_Resume.pdf" download="Shiva_Saraswat_Resume">
-                    <i class="fa-solid fa-file-arrow-down icon"></i>
-                    <p id="resume-link-1" class="nav-name" >RESUME</p>
-                </a>
-                <div id="side-window" >
-                    <a class="closebtn" "> &times;</a>
-                    <a href="#home">HOME</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#skills">SKILLS</a>
-                    <a href="#projects">PROJECTS</a>
-                    <a href="#contact">CONTACTS</a>
-                    <a id="resume-link-1"   onclick="resumeDownload()" target="_blank" 
-                    href="Shiva_Saraswat_Resume.pdf"
-                    download="Shiva_Saraswat_Resume.pdf">RESUME</a>
-                  </div>
-                <button class="openbtn"">&#9776; </button>
-            </div>
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Shiva Saraswat home"><span class="brand-mark">SS</span><span>Shiva Saraswat<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a class="nav-resume" href="Shiva_Saraswat_Resume.pdf" target="_blank" rel="noreferrer">Resume <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
 
-        </section>
-        <!-- ="Shiva_Saraswat_Resume.pdf" -->
-        <section id="home">
-            <diV>
-                <div class="details-div">
-                    <div>
-                        <div>
-                            <h2>Hi, I'm</h3>
-                                <h1>Shiva Saraswat</h1>
-                                <h3>FullStack Developer...</h3>
-                                <div target="_blank" class="btn-pack">
-                                    <div id="resume-button-2"  onclick="resumeDownload()">
-                                        <a id="resume-link-2" class="resume-btn"
-                                        href ="Shiva_Saraswat_Resume.pdf"
-                                        download><span>Resume</span>
-                                        </a>
-                                    </div>
-                                   
-                                    <div>
-                                        <i id="contact-github" class="fa-brands fa-github"></i>
-                                        <i id="contact-linkedin" class="fa-brands fa-linkedin"></i>
-                                    </div>
-                                </div>
-                                
-                        </div>
-                    </div>
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO ZOHO DEVELOPER OPPORTUNITIES</p>
+        <h1>Building better<br>business systems<span class="accent">.</span></h1>
+        <p class="hero-lede">I’m Shiva, a web developer moving from the MERN stack into <strong>Zoho One development</strong>—connecting teams, data, and everyday workflows.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-meta"><span>BASED IN INDIA</span><span class="meta-rule"></span><span>ZOHO ONE · MERN</span></div>
+      </div>
+      <div class="hero-art" aria-label="Zoho One ecosystem illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="orbit-core"><span class="core-kicker">CONNECTED</span><strong>WORK<br>FLOWS</strong><span class="core-arrow">↗</span></div>
+        <span class="orbit-chip chip-crm"><i>◈</i> CRM</span><span class="orbit-chip chip-creator"><i>⌘</i> Creator</span><span class="orbit-chip chip-flow"><i>⌁</i> Flow</span><span class="orbit-chip chip-analytics"><i>▥</i> Analytics</span>
+        <span class="art-caption">ONE ECOSYSTEM. LESS FRICTION.</span>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about">SCROLL TO EXPLORE <span>↓</span></a>
+    </section>
 
-                </div>
-                <div class="image-icon">
-                    <div>
+    <section class="intro section-shell" id="about">
+      <div class="section-label"><span>01 / ABOUT</span><span class="label-line"></span></div>
+      <div class="intro-grid">
+        <div><p class="eyebrow">FROM WEB APPS TO WORKFLOW AUTOMATION</p><h2>Good software should make work feel <span class="serif-accent">simpler.</span></h2></div>
+        <div class="intro-copy"><p>I started by building full-stack web experiences with JavaScript, React, Node.js, Express, and MongoDB. Now I’m bringing that product mindset to the Zoho ecosystem—designing practical CRM customizations, apps, and automations that help businesses work smarter.</p><p>I care about clear interfaces, reliable data, and solutions people can actually use every day.</p><a class="inline-link" href="Shiva_Saraswat_Resume.pdf" target="_blank" rel="noreferrer">VIEW MY RESUME <span>↗</span></a></div>
+      </div>
+      <div class="principles"><div><span>01</span><strong>Understand the process</strong><p>Start with the people and the real business problem.</p></div><div><span>02</span><strong>Connect the pieces</strong><p>Make tools, teams, and information work together.</p></div><div><span>03</span><strong>Keep it usable</strong><p>Build simple experiences that stand up to daily use.</p></div></div>
+    </section>
 
-                        <div class="background"></div>
-                        <img src="Resources/boy.png" />
+    <section class="expertise section-shell" id="expertise">
+      <div class="section-label"><span>02 / EXPERTISE</span><span class="label-line"></span></div>
+      <div class="section-heading"><div><p class="eyebrow">TOOLS I WORK WITH</p><h2>Two toolkits.<br>One way of thinking.</h2></div><p class="section-aside">A foundation in full-stack development, now focused on building connected business solutions with Zoho.</p></div>
+      <div class="skill-columns">
+        <article class="skill-panel zoho-panel"><div class="panel-top"><span class="panel-index">A</span><span class="panel-kicker">CURRENT FOCUS</span></div><h3>Zoho ecosystem</h3><p class="panel-desc">CRM customization, low-code apps, and workflow automation across Zoho One.</p><div class="skill-list"><span>Zoho CRM</span><span>Zoho Creator</span><span>Deluge</span><span>Zoho Flow</span><span>Zoho Analytics</span><span>Zoho Forms</span><span>Zoho Books</span><span>REST APIs</span></div><div class="panel-foot"><span class="status-dot"></span> BUILDING IN THE ZOHO ECOSYSTEM</div></article>
+        <article class="skill-panel web-panel"><div class="panel-top"><span class="panel-index">B</span><span class="panel-kicker">FULL-STACK FOUNDATION</span></div><h3>MERN & web</h3><p class="panel-desc">The skills I use to create responsive products and connect them to reliable back ends.</p><div class="skill-list"><span>JavaScript</span><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>HTML & CSS</span><span>Git & GitHub</span><span>Postman</span></div><div class="panel-foot">PRODUCT THINKING · API DESIGN · RESPONSIVE UI</div></article>
+      </div>
+    </section>
 
-                    </div>
+    <section class="projects section-shell" id="projects">
+      <div class="section-label"><span>03 / PROJECTS</span><span class="label-line"></span></div>
+      <div class="section-heading projects-heading"><div><p class="eyebrow">SELECTED WORK & CONCEPTS</p><h2>Designed around<br>real work.</h2></div><p class="section-aside">Zoho entries below are solution concepts that show how I’d approach common business workflows. MERN projects reflect the kind of full-stack products I’ve built.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured"><div class="project-visual crm-visual"><div class="visual-top"><span>01 / ZOHO ONE CONCEPT</span><span>CRM · CREATOR · FLOW</span></div><div class="crm-window"><div class="window-bar"><i></i><i></i><i></i><span>Pipeline overview</span></div><div class="crm-content"><div class="crm-side"></div><div class="crm-main"><span class="mock-label">SALES PIPELINE</span><div class="pipeline"><b>New lead<strong>24</strong></b><b>Qualified<strong>16</strong></b><b>Proposal<strong>08</strong></b><b>Won<strong>05</strong></b></div><div class="mock-row"></div><div class="mock-row short"></div></div></div></div><span class="visual-index">A</span></div><div class="project-info"><div class="project-meta"><span>ZOHO ONE · CRM AUTOMATION</span><span>01</span></div><h3>Lead-to-deal command center</h3><p>A connected sales workflow concept: capture leads, score and route them, automate follow-ups, and give managers a clear pipeline view.</p><div class="project-tags"><span>Zoho CRM</span><span>Deluge</span><span>Zoho Flow</span><span>Analytics</span></div></div></article>
+        <article class="project-card"><div class="project-visual creator-visual"><div class="visual-top"><span>02 / ZOHO ONE CONCEPT</span><span>CREATOR · BOOKS</span></div><div class="creator-board"><div class="board-head"><span>FIELD SERVICE</span><span>＋ NEW JOB</span></div><div class="job-card"><span class="job-icon">↗</span><div><b>Installation · #1042</b><small>Assigned to Priya · Today, 10:30</small></div><i>In progress</i></div><div class="job-card"><span class="job-icon green">✓</span><div><b>Maintenance · #1041</b><small>Assigned to Arjun · Today, 09:00</small></div><i class="done">Complete</i></div><div class="board-foot">JOBS TODAY <b>08</b><span>·</span> INVOICES READY <b>03</b></div></div><span class="visual-index">B</span></div><div class="project-info"><div class="project-meta"><span>ZOHO ONE · OPERATIONS</span><span>02</span></div><h3>Field service operations hub</h3><p>A Creator app concept for job scheduling, technician updates, inventory usage, and invoice handoff—keeping office and field teams in sync.</p><div class="project-tags"><span>Zoho Creator</span><span>Deluge</span><span>Zoho Books</span></div></div></article>
+        <article class="project-card"><div class="project-visual support-visual"><div class="visual-top"><span>03 / ZOHO ONE CONCEPT</span><span>DESK · ANALYTICS</span></div><div class="support-board"><div class="support-title">CUSTOMER CARE <span>THIS WEEK ↗</span></div><div class="support-stats"><div><small>OPEN TICKETS</small><b>18</b><span>↓ 12% this week</span></div><div><small>FIRST RESPONSE</small><b>1.4h</b><span>↓ 23 min</span></div></div><div class="chart-bars"><i style="--bar:42%"></i><i style="--bar:58%"></i><i style="--bar:48%"></i><i style="--bar:70%"></i><i style="--bar:62%"></i><i style="--bar:88%"></i><i style="--bar:76%"></i><i style="--bar:96%"></i></div><div class="chart-labels"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div></div><span class="visual-index">C</span></div><div class="project-info"><div class="project-meta"><span>ZOHO ONE · CUSTOMER SUPPORT</span><span>03</span></div><h3>Support that closes the loop</h3><p>A service workflow concept that categorizes incoming requests, routes urgent cases, and turns support data into actionable service insights.</p><div class="project-tags"><span>Zoho Desk</span><span>Zoho Flow</span><span>Analytics</span></div></div></article>
+        <article class="project-card"><div class="project-visual mern-visual"><div class="visual-top"><span>04 / MERN PROJECT</span><span>REACT · NODE</span></div><div class="shop-window"><div class="shop-nav"><b>FORM<span>&</span>FIELD</b><span>COLLECTIONS　 JOURNAL　 BAG (02)</span></div><div class="shop-content"><div><small>THE EVERYDAY EDIT</small><h4>Objects for<br>slower living.</h4><span class="shop-cta">EXPLORE COLLECTION ↗</span></div><div class="product-tile"><span>BEST SELLER</span><div class="product-shape"></div><b>Studio ceramic / $48</b></div></div></div><span class="visual-index">D</span></div><div class="project-info"><div class="project-meta"><span>MERN · E-COMMERCE</span><span>04</span></div><h3>Commerce, made considered</h3><p>A full-stack storefront concept with product discovery, accounts, a cart, and a streamlined checkout experience.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div></div></article>
+        <article class="project-card"><div class="project-visual care-visual"><div class="visual-top"><span>05 / MERN PROJECT</span><span>REACT · EXPRESS</span></div><div class="care-window"><div class="care-side"><b>care<span>space</span></b><small>YOUR WELLNESS, IN ONE PLACE</small><span class="care-nav active">◷ &nbsp;Appointments</span><span class="care-nav">▧ &nbsp;Providers</span><span class="care-nav">♡ &nbsp;My profile</span></div><div class="care-main"><small>GOOD MORNING, MAYA</small><h4>Your care,<br>on your time.</h4><div class="appointment"><span>UPCOMING APPOINTMENT</span><b>Dr. Patel · Consultation</b><small>Thursday, 2:30 PM <i>CONFIRMED</i></small></div></div></div><span class="visual-index">E</span></div><div class="project-info"><div class="project-meta"><span>MERN · BOOKING PLATFORM</span><span>05</span></div><h3>CareSpace appointments</h3><p>A service-booking platform concept for finding providers, managing appointments, and keeping client and provider journeys connected.</p><div class="project-tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span></div></div></article>
+      </div>
+      <p class="concept-note"><span>↗</span> Zoho projects are concept designs for portfolio demonstration; they are not presented as deployed client implementations.</p>
+    </section>
 
-                </div>
-
-            </diV>
-        </section>
-
-        <section id="about" class="about section">
-            <img src="Resources/wave6.png" />
-            <div class="main-about">
-                <div class="my-details">
-                    <div>
-                        <div> <img src="Resources/profile_photo.jpg" class="home-img" /></div>
-
-                    </div>
-                    <div>
-                        <h1 id="user-detail-name">About Me</h1>
-                        <!-- <hr style="width:200px; margin-bottom:10px"> -->
-
-                        <p id="user-detail-intro">
-                            Ability to design, develop, & deliver user-centric web applications using HTML, CSS, Javascript, Node.js, Express, MongoDB, MySQL to boost customer engagement. Effective remote collaborator with an immense passion for building good tech software, looking forward to a sparkling career as a Full-Stack Developer.
-                        </p>
-                        <!-- <div class="past-info">
-                        <div>
-                            <div>
-                                <p> 1200+ </p>
-                            </div>
-                            <hr>
-                            <div>Coding Experience</div>
-                        </div>
-                        <div>
-                            <div>
-                                <p> 1200+ </p>
-                            </div>
-                            <hr>
-                            <div>Coding Experience</div>
-                        </div>
-                        <div>
-                            <div>
-                                <p> 1200+ </p>
-                            </div>
-                            <hr>
-                            <div>Coding Experience</div>
-                        </div>
-                    </div> -->
-                        <button id="contact-btn">Contact Me</button>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <img src="Resources/wave8.png" />
-        </section>
-
-        <section id="skills">
-            <h1>SKILLS</h1>
-            <!-- <hr style="width:200px; margin:0px auto 10px"> -->
-            <div class="skills-main">
-                <div>
-                    <div class="main-tech-stack skills-card">
-                        <h1>TECH STACKS</h1>
-                        <div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/html_logo.png" />
-                                    <p class="skills-card-name">HTML</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/css.png" />
-                                    <p class="skills-card-name">CSS</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/javascript.png" />
-                                    <p class="skills-card-name">JavaScript</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/nodejs.png" />
-                                    <p class="skills-card-name">Node JS</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/express.png" />
-                                    <p class="skills-card-name">Express</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/mongo.png" />
-                                    <p class="skills-card-name">MongoDB</p>
-                                </div>
-                            </div>
-    
-                        </div>
-                        
-                       
-                    </div>
-                    <div class="main-tools">
-                        <h1>TOOLS </h1>
-                        <div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/vscode.png" />
-                                    <p class="skills-card-name">VS Code</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/github.png" />
-                                    <p class="skills-card-name">GitHub</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="./Resources/postman.png" />
-                                    <p class="skills-card-name">Postman</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="./Resources/aws.png" />
-                                    <p class="skills-card-name">AWS</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/npm.png" />
-                                    <p class="skills-card-name">NPM</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <img class="skills-card-img" src="Resources/git.png" />
-                                    <p class="skills-card-name">GIT</p>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- <hr style="margin:60px"> -->
-        <section id="projects">
-            <p>My Recent Work</p>
-            <h1>PROJECTS</h1>
-            <div class="all-projects">
-                <div>
-                    <div class="single-project project-card">
-                        <h1 class="project-title" >Bewakoof website Clone</h1>
-                        <div class="project-img "><img src="Resources/shopping.jpg"/></div>
-                        <p class="project-description">It is a clone Bewakoof website, the famaous E-commerce website where user can buy clothes and trendy mobile covers.</p>
-                        <!-- <ul style="list-style-type:disc">Features:
-                            <li>Valid Sign-up and Login</li>
-                            <li>Users can book a Trip</li>
-                            <li>Responsive</li>
-                        </ul> -->
-                          
-                        <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript | JSON Server</h5>
-                        <p>Individual Project built in 4 Days.</p>
-                        <div><button class="project-github-link" onclick="bewakoofGithub()">GitHub</button><button  class="project-deployed-link" onclick="lyncNetlify()">Live Demo</button></div>
-                    </div>
-                    <div class="single-project project-card">
-                        <h1 class="project-title">E-Commerce Website</h1>
-                        <div class="project-img"><img src="Resources/ecommerce.jfif"/></div>
-                        <p class="project-description">It is a clone of Geeks-Buying, the world's largest electronics E-Commerce Store.</p>
-                        <!-- <ul style="list-style-type:disc">
-                            <li>Features:</li>
-                            <li>Valid Sign-up and Login</li>
-                            <li>Users can book a Trip</li>
-                            <li>Responsive</li>
-                        </ul> -->
-                          
-                        <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
-                        <p>Collaborative Project built  in 4 Days.</p>
-                        <div><button class="project-github-link" onclick="geeksGithub()">GitHub</button><button  class="project-deployed-link" onclick="geeksNetlify()">Live Demo</button></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="single-project project-card">
-                        <h1 class="project-title">Vertinary Booking System</h1>
-                        <div class="project-img "><img src="Resources/vertinary.jfif"/></div>
-                        <p class="project-description">It is a Booking Website for veterinarians,And also start join as doctor.</p>
-                        <!-- <ul style="list-style-type:disc">
-                            <li>Features:</li>
-                            <li>Valid Sign-up and Login</li>
-                            <li>Users can book a Trip</li>
-                            <li>Responsive</li>
-                        </ul> -->
-                          
-                        <h5  class="project-tech-stack">Tech Stack: HTML | CSS | JavaScript | Node.js | Express | MongoDB</h5>
-                        <p>Collaborative Project built  in 4 Days.</p>
-                        <div><button class="project-github-link" onclick="vertinaryGithub()">GitHub</button><button  class="project-deployed-link" onclick="vertNetlify()">Live Demo</button></div>
-                    </div>
-                    <div class="single-project project-card">
-                        <h1 class="project-title">Beauty Heaven</h1>
-                        <div class="project-img "><img src="Resources/salon.jpg"/></div>
-                        <p class="project-description" >It is an online platform designed to connect beauty professionals with clients looking to book beauty-related sessions.</p>
-                        <!-- <ul style="list-style-type:disc">
-                            <li>Features:</li>
-                            <li>Valid Sign-up and Login</li>
-                            <li>Users can book a Trip</li>
-                            <li>Responsive</li>
-                        </ul> -->
-                          
-                        <h5  class="project-tech-stack">Tech Stack: React | CSS | JavaScript | Nodejs | Express | MySQL </h5>
-                        <p>Collaborative Project built  in 4 Days.</p>
-                        <div><button class="project-github-link" onclick="beautyGithub()">GitHub</button><button  class="project-deployed-link" onclick="beautyNetlify()">Live Demo</button></div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="github-cal-div ">
-                <h1>GitHub Calender</h1>
-                <div>
-                    <script
-                    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-                    ></script>
-            
-                    <link
-                    rel="stylesheet"
-                    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-                    />
-
-                        <div class="react-activity-calendar calendar">
-                            <!-- Loading stuff -->
-                            Loading the data just for you.
-                        </div>
-
-                        <script>
-                            // or enable responsive functionality
-                            GitHubCalendar(".calendar", "shivam5665", {
-                                responsive: true,
-                                global_stats: true,
-                                tooltips: true,
-                            });
-                        </script>
-                    <div class="github-stats-info">
-                        <img id="github-stats-card"
-                            src="https://github-readme-stats.vercel.app/api?username=shivam5665&show_icons=true&theme=merko">
-
-                        <img id="github-streak-stats"
-                            src="https://github-readme-streak-stats.herokuapp.com?user=shivam5665&theme=merko&hide_border=false">
-                    </div>
-                    <div>
-                        <img id="github-top-langs"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivam5665&layout=compact&theme=merko">
-                    </div>
-
-
-
-                </div>
-            </div>
-            
-        </section>
-        <section id="contact">
-            <h1>
-                Contact Me
-            </h1>
-            <p>Get in touch</p>
-            <div>
-                <div class="personal-info">
-                    <div>
-                        <div id="contact-email">
-                            <div class="info-head">
-                                <i class="fa-regular fa-envelope"></i>
-                                <p>Email</p>
-                            </div>
-                            <p>ssaraswat@gmail.com</p>
-                        </div>
-                        <div  >
-                            <div class="info-head">
-                                <i class="fa-solid fa-phone"></i>
-                                <p id="contact-phone" >Phone Number</p>
-                            </div>
-                            <p>+91 8630942753</p>
-                        </div>
-                        <div>
-                            <div class="info-head">
-                                <i class="fa-brands fa-twitter"></i>
-                                <p>Twitter</p>
-                            </div>
-                            <p>@shivasa82609466</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="send-info">
-
-                    <div>
-                        <form
-                        action="https://formspree.io/f/xayzbdvw"
-                        method="POST"
-                        >
-                            <div class="input-box">
-                                <p>Name</p>
-                                <input type="text" name="name" required/>
-                            </div>
-                            <div class="input-box">
-                                <p>Email</p>
-                                <input type="email" name="email" required />
-                            </div>
-                            <div class="input-box">
-                                <p>Projects</p>
-                                <input type="text" />
-                            </div>
-                            <div class="input-box">
-                                <p>Message</p>
-                                <textarea type="text" rows="5" name="message" required ></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <button type="submit" id="form-submit">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section id="footer">
-            <div>
-                <a href="#home" class="footer-nav">
-                    <p class=" nav-name">HOME </p>
-                </a>
-                <a href="#about" class="footer-nav">
-                    <p class=" nav-name">ABOUT</p>
-                </a>
-                <a href="#skills" class="footer-nav">
-                    <p class=" nav-name">SKILLS</p>
-                </a>
-                <a href="#projects" class="footer-nav">
-                    <p class=" nav-name">PROJECTS</p>
-                </a>
-                <a href="#contact" class="footer-nav">
-                    <p class=" nav-name">CONTACTS</p>
-                </a>
-                <a href="Shiva_Saraswat_Resume.pdf" class=""
-                    onclick="window.open(`https://drive.google.com/file/d/1i0290izjJ15Lj8PjawrOhBNCg4IkcGyz/view?usp=share_link`)"
-                    download href="Shiva_Saraswat_Resume.pdf">
-                    <p class=" nav-name">RESUME</p>
-                    
-                </a>
-            </div>
-            <div class="icons-footer">
-                <i class="fa-brands fa-github" onclick="githubBtn()"></i>
-                <i class="fa-brands fa-linkedin" obclick="linkedinBtn()"></i>
-            </div>
-            <div>
-                <p>© Design By Shiva Saraswat</p>
-            </div>
-        </section>
-
-    </div>
+    <section class="contact section-shell" id="contact">
+      <div class="section-label"><span>04 / CONTACT</span><span class="label-line"></span></div>
+      <div class="contact-grid"><div><p class="eyebrow">HAVE A WORKFLOW TO IMPROVE?</p><h2>Let’s make<br>work <span class="serif-accent">work better.</span></h2><p class="contact-copy">I’m looking for opportunities to grow as a Zoho developer and help teams get more from their tools. Have a role, project, or idea in mind? I’d love to hear about it.</p><a class="button button-light" href="mailto:ssaraswat@gmail.com">Start a conversation <span>↗</span></a></div><div class="contact-details"><a href="mailto:ssaraswat@gmail.com"><span>EMAIL</span><b>ssaraswat@gmail.com</b><i>↗</i></a><a href="https://linkedin.com/in/shiva-saraswat-718048199/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><b>Connect with me</b><i>↗</i></a><a href="https://github.com/shivam5665" target="_blank" rel="noreferrer"><span>GITHUB</span><b>github.com/shivam5665</b><i>↗</i></a><div class="availability"><span class="status-dot"></span> OPEN TO OPPORTUNITIES</div></div></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">SS</span><span>Shiva Saraswat<span class="brand-dot">.</span></span></a><span>BUILT WITH CURIOSITY · © <span id="year"></span></span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="index.js"></script>
 </body>
-
 </html>
-<script src="index.js"></script>
